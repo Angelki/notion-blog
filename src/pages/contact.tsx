@@ -13,22 +13,22 @@ const contacts = [
   {
     Comp: Twitter,
     alt: 'twitter icon',
-    link: 'https://twitter.com/_ijjk',
+    link: 'https://twitter.com/angelks41',
   },
   {
     Comp: GitHub,
     alt: 'github icon',
-    link: 'https://github.com/ijjk',
+    link: 'https://github.com/angelki',
   },
   {
     Comp: LinkedIn,
     alt: 'linkedin icon',
-    link: 'https://www.linkedin.com/in/jj-kasper-0b5392166/',
+    link: 'https://www.linkedin.com/in/%E6%B3%BD%E6%B3%BD-%E5%91%A8-b4a347139',
   },
   {
     Comp: Envelope,
     alt: 'envelope icon',
-    link: 'mailto:jj@jjsweb.site?subject=Notion Blog',
+    link: 'mailto:3zangelks@gmail.com?subject=blog',
   },
 ]
 
@@ -37,14 +37,17 @@ export default () => (
     <Header titlePre="Contact" />
     <div className={sharedStyles.layout}>
       <div className={contactStyles.avatar}>
-        <img src="/avatar.png" alt="avatar with letters JJ" height={60} />
+        <img
+          src="https://avatars2.githubusercontent.com/u/14013570?s=460&v=4"
+          alt="github avatar"
+          height={60}
+        />
       </div>
 
       <h1 style={{ marginTop: 0 }}>Contact</h1>
 
       <div className={contactStyles.name}>
-        JJ Kasper - Next.js Engineer @{' '}
-        <ExtLink href="https://vercel.com">Vercel</ExtLink>
+        Edward Chow - A Front End Web Developer
       </div>
 
       <div className={contactStyles.links}>
