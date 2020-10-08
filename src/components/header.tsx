@@ -10,13 +10,13 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Contact', page: '/contact' },
 ]
 
-export default ({ titlePre = '遗忘 · 笔' }) => {
+export default ({ titlePre = '' }) => {
   const { pathname } = useRouter()
 
   return (
     <header className={styles.header}>
       <Head>
-        <title>{titlePre ? `${titlePre} |` : ''}</title>
+        <title>{titlePre ? `${titlePre} |  ` : ''}Forgotten Pen</title>
         {/* TODO: ADD Metas */}
         <meta name="description" content="技术博客" />
       </Head>
