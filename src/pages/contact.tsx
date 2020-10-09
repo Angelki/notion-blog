@@ -43,9 +43,6 @@ export default () => (
           height={60}
         />
       </div>
-
-      <h1 style={{ marginTop: 0 }}>Contact</h1>
-
       <div className={contactStyles.name}>
         Edward Chow - A Front End Web Developer
       </div>

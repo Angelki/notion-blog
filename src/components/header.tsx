@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Home', page: '/' },
-  { label: 'Blog', page: '/blog' },
-  { label: 'Contact', page: '/contact' },
+  { label: '博客', page: '/' },
+  // { label: 'Blog', page: '/blog' },
+  { label: '关于', page: '/contact' },
 ]
 
 export default ({ titlePre = '' }) => {
