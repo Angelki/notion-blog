@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Blog</title>
+    <subtitle>Blog</subtitle>
+    <link href="/atom" rel="self" type="application/rss+xml"/>
+    <link href="/" />
+    <updated>2020-10-09T16:43:05.826Z</updated>
+    <id>Forgotten Pen</id>
+    <entry>
+      <id>/blog/hello</id>
+      <title>Hello, World</title>
+      <link href="/blog/hello"/>
+      <updated>2020-10-08T16:00:00.078Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          
+          <p class="more">
+            <a href="/blog/hello">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Edward Chow</name></author>
+    </entry>
+    <entry>
+      <id>/blog/how-does-setstate-know-what-to-do</id>
+      <title>[译]setState如何知道该做什么？</title>
+      <link href="/blog/how-does-setstate-know-what-to-do"/>
+      <updated>2018-12-08T16:00:00.078Z</updated>
+      <content type="xhtml">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <p>18年看到的一篇Dan的关于setState的文章，当时看了茅塞顿开，就翻译了一下</p>
+          <p class="more">
+            <a href="/blog/how-does-setstate-know-what-to-do">Read more</a>
+          </p>
+        </div>
+      </content>
+      <author><name>Edward Chow</name></author>
+    </entry>
+  </feed>

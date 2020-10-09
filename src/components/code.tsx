@@ -1,5 +1,4 @@
 import Prism from 'prismjs'
-import 'prismjs/components/prism-jsx'
 
 const Code = ({ children, language = 'javascript' }) => {
   return (
@@ -29,6 +28,8 @@ const Code = ({ children, language = 'javascript' }) => {
           background: #f5f5f5;
           font-size: 0.75rem;
           border-radius: var(--radius);
+          font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New,
+            monospace;
         }
       `}</style>
     </>
