@@ -7,6 +7,7 @@ import contactStyles from '../styles/contact.module.css'
 import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
+import Sakura from '../components/Sakura'
 import blogStyles from '../styles/blog.module.css'
 
 import { getBlogLink, getDateStr, postIsPublished } from '../lib/blog-helpers'
@@ -76,6 +77,7 @@ export default ({ posts = [], preview }) => (
     <div className={sharedStyles.layout}>
       <h1>遗忘 · 笔</h1>
       <h2>技术的矫揉造作，人生的无病呻吟</h2>
+      <Sakura count={12} />
       <div className={sharedStyles.layout}>
         {preview && (
           <div className={blogStyles.previewAlertContainer}>

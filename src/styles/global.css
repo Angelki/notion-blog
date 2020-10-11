@@ -28,7 +28,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 20px;
 }
 
 body {
@@ -46,6 +45,10 @@ body {
 
   /* Hack */
   overflow-x: hidden;
+
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 code[class*='language-'],
