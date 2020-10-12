@@ -152,12 +152,14 @@ const RenderPost = ({ post, redirect, preview }) => {
       )}
       <div className={blogStyles.post}>
         <h1>{post.Page || ''}</h1>
-        {post.Authors.length > 0 && (
-          <div className="authors">By: {post.Authors.join(' ')}</div>
-        )}
-        {post.Date && (
-          <div className="posted">Posted: {getDateStr(post.Date)}</div>
-        )}
+        <div className={blogStyles.infoContainer}>
+          {post.Authors.length > 0 && (
+            <div className="authors">作者：{post.Authors.join(' ')}</div>
+          )}
+          {post.Date && (
+            <div className="posted">发布日期： {getDateStr(post.Date)}</div>
+          )}
+        </div>
 
         <hr />
 

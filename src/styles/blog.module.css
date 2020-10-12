@@ -29,7 +29,7 @@
   justify-content: center;
   border: none;
   background-color: black;
-  border: 1px solid black;
+  border: 1px solid #efefef;
   color: white;
   padding: 10px;
   height: 24px;
@@ -47,7 +47,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
+  cursor: pointer;
 }
+
+.titleContainer a {
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .draftBadge {
   border-radius: 16px;
   background-color: black;
@@ -64,17 +71,38 @@
 
 .postPreview {
   max-width: 600px;
-  margin: 10px auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
 }
 
 .postPreview:last-child {
   border-bottom: none;
 }
+.postPreview p,
+.postPreview :global(.posted),
+.postPreview :global(.authors) {
+  margin: 4px;
+}
 
+.infoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #666;
+}
+
+.infoContainer .posted {
+  margin-left: 4px;
+}
 .postPreview h3,
 .post h1 {
-  margin-bottom: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  font-weight: bold;
+  margin-top: 8px;
+  line-height: 1.7;
+  padding: 0;
 }
 
 .post h1 {
@@ -119,10 +147,6 @@
   text-decoration: underline;
 }
 
-.postPreview :global(.posted) {
-  margin-bottom: 0.5em;
-}
-
 .post {
   max-width: calc(900px + 10%);
   margin: 0 auto;
@@ -131,6 +155,9 @@
 
 .post :global(hr) {
   margin-bottom: 2em;
+  height: 1px;
+  border: 0;
+  background: #ddd;
 }
 
 .post :global(a + p) {
