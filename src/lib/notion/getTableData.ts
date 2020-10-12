@@ -12,6 +12,7 @@ export default async function loadTable(collectionBlock: any, isPosts = false) {
     collectionId: value.collection_id,
     collectionViewId: value.view_ids[0],
   })
+  console.log(JSON.stringify(col), '🍌')
   const entries = values(col.recordMap.block).filter((block: any) => {
     return block.value && block.value.parent_id === value.collection_id
   })
@@ -49,6 +50,8 @@ export default async function loadTable(collectionBlock: any, isPosts = false) {
           case 'p': // page (block)
             const page = col.recordMap.block[type[1]]
             row.id = page.value.id
+            //TODO: 这里取之不正确
+            // "title":[["我把回调的入参e错误地写成了"],["event",[["c"]]],["，但竟没报错？？"]]
             val = page.value.properties.title[0][0]
             break
           case 'd': // date
