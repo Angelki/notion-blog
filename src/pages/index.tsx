@@ -110,14 +110,16 @@ export default ({ posts = [], preview }) => (
                   </Link>
                 </h3>
                 {post.Authors.length > 0 && (
-                  <div className="authors">By: {post.Authors.join(' ')}</div>
+                  <div className="authors">作者：{post.Authors.join(' ')}</div>
                 )}
                 {post.Date && (
-                  <div className="posted">Posted: {getDateStr(post.Date)}</div>
+                  <div className="posted">
+                    发布时间： {getDateStr(post.Date)}
+                  </div>
                 )}
                 <p>
                   {(!post.preview || post.preview.length === 0) &&
-                    'No preview available'}
+                    '没啥可预览的'}
                   {(post.preview || []).map((block, idx) =>
                     textBlock(block, true, `${post.Slug}${idx}`)
                   )}

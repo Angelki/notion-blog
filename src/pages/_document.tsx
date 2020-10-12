@@ -21,3 +21,6 @@ class MyDocument extends Document {
 }
 
 export default MyDocument
+
+// 模型 https://github.com/Eikanya/Live2d-model
+//  教程 https://zhaoolee.com/GBlog/2019/07/04/live2d/
