@@ -27,16 +27,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: Dankmono;
-  src: '/fonts/dankmono.ttf';
-}
-
-@font-face {
-  font-family: Dankmono-it;
-  src: '/fonts/dankmono-it.ttf';
-}
-
 html,
 body {
   padding: 0;

@@ -28,8 +28,9 @@ const Code = ({ children, language = 'javascript' }) => {
           background: #f5f5f5;
           font-size: 0.75rem;
           border-radius: var(--radius);
-          font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New,
-            monospace;
+          font-family: Dankmono, DankMono-it, source-code-pro, Menlo, Monaco,
+            Consolas, Courier New, monospace;
+          font-variant-ligatures: common-ligatures;
         }
       `}</style>
     </>
