@@ -16,12 +16,25 @@
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  --font-mono: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  --font-mono: Dankmono, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  --font-mono-keyword: Dankmono-it, Dankmono, Menlo, Monaco, Lucida Console,
+    Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+    monospace;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Dankmono;
+  src: '/fonts/dankmono.ttf';
+}
+
+@font-face {
+  font-family: Dankmono-it;
+  src: '/fonts/dankmono-it.ttf';
 }
 
 html,
@@ -97,7 +110,7 @@ code[class*='language-css'] {
   color: var(--geist-success);
 }
 .token.keyword {
-  color: #ff0078;
+  font-family: var(--font-mono-keyword);
 }
 .token.function,
 .token.tag,
@@ -327,6 +340,7 @@ code {
   padding: 0.2rem;
   border-radius: var(--radius);
   font-family: var(--font-mono);
+  font-feature-settings: normal;
 }
 
 .slice {

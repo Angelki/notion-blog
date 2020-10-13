@@ -91,7 +91,7 @@
   color: #666;
 }
 
-.infoContainer .posted {
+.infoContainer :global(.posted) {
   margin-left: 4px;
 }
 .postPreview h3,
