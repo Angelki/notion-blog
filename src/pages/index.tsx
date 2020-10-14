@@ -8,6 +8,7 @@ import Twitter from '../components/svgs/twitter'
 import Envelope from '../components/svgs/envelope'
 import LinkedIn from '../components/svgs/linkedin'
 import Sakura from '../components/Sakura'
+import Cat from '../components/Cat'
 import blogStyles from '../styles/blog.module.css'
 
 import { getBlogLink, getDateStr, postIsPublished } from '../lib/blog-helpers'
@@ -136,6 +137,7 @@ export default ({ posts = [], preview }) => (
             })}
         </div>
       </div>
+      <Cat />
     </div>
   </>
 )
