@@ -365,7 +365,7 @@ code {
 }
 
 footer {
-  padding: 2em 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -385,11 +385,8 @@ footer span:nth-child(3) a {
 #marco {
   width: 100vw;
   height: 380px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 2em;
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
 }
 
 #cielo {
@@ -411,7 +408,7 @@ footer span:nth-child(3) a {
   -webkit-animation: animar_edificios 120s linear infinite;
   -ms-animation: animar_edificios 120s linear infinite;
   -moz-animation: animar_edificios 120s linear infinite;
-  bottom: -210px;
+  bottom: -250px;
   position: absolute;
 }
 
