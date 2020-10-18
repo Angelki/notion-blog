@@ -26,7 +26,6 @@ const Code = ({ children, language = 'javascript' }) => {
           padding: 0.8rem;
           line-height: 1.5;
           background: #f5f5f5;
-          font-size: 0.75rem;
           border-radius: var(--radius);
           font-family: Dankmono, DankMono-it, source-code-pro, Menlo, Monaco,
             Consolas, Courier New, monospace;

@@ -29,6 +29,7 @@ function applyTags(tags = [], children, noPTag = false, key) {
 }
 
 export function textBlock(text = [], noPTag = false, mainKey) {
+  console.log(text, '🍎')
   const children = []
   let key = 0
 

@@ -136,14 +136,8 @@ export default ({ posts = [], preview }) => (
               )
             })}
         </div>
-        <div id="marco">
-          <div id="cielo"></div>
-          <div id="luna"></div>
-          <div id="gato"></div>
-          <div id="edificios"></div>
-        </div>
       </div>
-      {/* <Cat /> */}
+      <Cat />
     </div>
   </>
 )
