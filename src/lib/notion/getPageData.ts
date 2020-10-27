@@ -3,6 +3,7 @@ import rpc, { values } from './rpc'
 export default async function getPageData(pageId: string) {
   try {
     const data = await loadPageChunk({ pageId })
+    // console.log(data, '📖')
     const blocks = values(data.recordMap.block)
 
     if (blocks[0] && blocks[0].value.content) {
@@ -19,7 +20,7 @@ export default async function getPageData(pageId: string) {
 
 export function loadPageChunk({
   pageId,
-  limit = 100,
+  limit = 99999,
   cursor = { stack: [] },
   chunkNumber = 0,
   verticalColumns = false,
