@@ -28,18 +28,6 @@ export default async function getBlogIndex(previews = true) {
         chunkNumber: 0,
         verticalColumns: false,
       })
-      // console.log(
-      //   {
-      //     pageId: BLOG_INDEX_ID,
-      //     limit: 999, // TODO: figure out Notion's way of handling pagination
-      //     cursor: { stack: [] },
-      //     chunkNumber: 0,
-      //     verticalColumns: false,
-      //   },
-      //   '🍎'
-      // )
-      // console.log(JSON.stringify(data), ' 🌰')
-
       // Parse table with posts
       const tableBlock = values(data.recordMap.block).find(
         (block: any) => block.value.type === 'collection_view'

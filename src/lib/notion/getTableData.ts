@@ -12,7 +12,6 @@ export default async function loadTable(collectionBlock: any, isPosts = false) {
     collectionId: value.collection_id,
     collectionViewId: value.view_ids[0],
   })
-  // console.log(JSON.stringify(col), '🍌')
   const entries = values(col.recordMap.block).filter((block: any) => {
     return block.value && block.value.parent_id === value.collection_id
   })
